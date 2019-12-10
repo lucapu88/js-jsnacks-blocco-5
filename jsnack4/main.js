@@ -3,9 +3,14 @@
 
 var array1 = [1, 2, 3, 4, 5];
 var array2 = ['a', 'b', 'c', 'd', 'e'];
+var arrayFinale = []
 
-function fusion(a,b) {
+function fusion(array1,array2) {
   for (var i = 0; i < 5; i++) {
-    
+    arrayFinale.push(array1[i]);
+    arrayFinale.push(array2[i]);
   }
+  return arrayFinale;
 }
+
+console.log(fusion(array1,array2));
