@@ -6,11 +6,11 @@ var array2 = ['a', 'b', 'c', 'd', 'e'];
 var arrayFinale = []
 
 function fusion(array1,array2) {
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < array1.length && array2.length; i++) {
     arrayFinale.push(array1[i]);
     arrayFinale.push(array2[i]);
-  }
+  };
   return arrayFinale;
-}
+};
 
 console.log(fusion(array1,array2));
